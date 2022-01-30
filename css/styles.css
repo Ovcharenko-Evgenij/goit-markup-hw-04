@@ -4,7 +4,8 @@
   --selection-text-color: #2196f3;
   --hero-btn-color: #ffffff;
   --portfolio-btn-color: #f5f4fa;
-  /* --outlain-for-layout:tomato; */
+  --icon-link-color: #afb1b8;
+  --outlain-for-layout: tomato;
 }
 
 * {
@@ -91,6 +92,12 @@ a {
   margin-left: 50px;
 }
 
+.envelope {
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -113,6 +120,7 @@ a {
 .header-info {
   display: flex;
   margin-left: auto;
+  color: var(--list-text-color);
 }
 
 .header-info-adres {
@@ -136,6 +144,10 @@ a {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px; 
   
   outline: 2px solid var(--outlain-for-layout);
 }
@@ -192,15 +204,34 @@ a {
 
 .about-container {
   display: flex;
-  /* margin-left: - 30px; */
+  
 }
 
 .about-container-title {
   width: 270px;
+    outline: 2px solid var(--outlain-for-layout);
+
 }
 
 .about-container-title + .about-container-title {
   margin-left: 30px;
+}
+
+.about-icon {
+  background-color: var(--portfolio-btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  width: 270px;
+  height: 120px;
+    
+  outline: 2px solid var(--outlain-for-layout);
+}
+
+.about-icon-img {
+  width: 70px;
+  height: 70px;
 }
 
 .about-title {
@@ -209,6 +240,8 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-top: 30px;
 
   color: var(--header-text-color);
 }
@@ -305,6 +338,35 @@ a {
 
   letter-spacing: 0.03em;
   margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--hero-btn-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-link-color);
+}
+
+.team-social-link:hover {
+  background-color: var(--selection-text-color);
+  color: var(--hero-btn-color);
+}
+.team-social-icon {
+  fill: currentColor;
 }
 
 /*-------------------footer-------------------------*/
