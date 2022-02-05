@@ -92,10 +92,11 @@ a {
 }
 
 .envelope {
-    align-items: center;
+  align-items: center;
   justify-content: center;
   fill: currentColor;
   display: flex;
+  margin-right: 10px;
 }
 
 .header-link {
